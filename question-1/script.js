@@ -13,14 +13,14 @@ if(args < 3){
 
 }
 else{
-    let subirUno = 1;
-    let subirDos = 2;
+    let subirUno = 1;                           //Definimos la variable de 1 paso
+    let subirDos = 2;                           //Definimos la variable de 2 paso
 
     for(let i = 2; i < args; i++){
-        const suma = subirUno + subirDos;
-        subirUno = subirDos;
+        const suma = subirUno + subirDos;               //Sumamos los valores los valores anteriores
+        subirUno = subirDos;                            
         subirDos = suma;
     }
     console.log("Las formas distintas de subir la escalera es: "+subirDos);
 }
-//console.log(`Running question #1 with args ${args}`)
+//console.log(`Running question #1 with args ${args}`)              
