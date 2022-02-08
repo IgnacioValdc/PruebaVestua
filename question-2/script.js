@@ -63,5 +63,7 @@ for(let i = 0; i<entidad_id.length; i++){
 resultado.forEach(element => {
     writeStream.write(element);             //Escribimos los datos en el documento
 });
+
+console.log("Completado");
 //console.log(`Running question #2 with args ${args[1]}`)     //Esta linea no presenta un dato definido porque se asumio que solo entraba un argumento en ninguna parte se especifica
                                                             //cuantos argumentos entraran
