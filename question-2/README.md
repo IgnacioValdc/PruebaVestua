@@ -43,4 +43,6 @@ Por ultimo con el array limpio se agregan los datos al csv que el programa gener
 
 Cabe decir que el programa leera el csv siempre y cuando se agregue por linea de comandos siguiendo el siguiente ejemplo:
 
-node script.js nombreArchivo.csv
+node script.js nombreArchivo.csv 
+
+Se asumio que no hay 2do argumento ya que no lo especifica por tanto el nombre del nuevo documento se establece automaticamente en el codigo
