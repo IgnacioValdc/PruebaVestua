@@ -22,4 +22,25 @@
 
 # Razonamiento
 
-_Escribir aquí los supuestos asumidos, reflexiones y explicaciones de la solución_
+Comence por obtener los datos del archivo "BrowsingEvents.csv", luego separar los datos por linea, posteriormente separar los datos por columna
+y por ultimo almacenar estos datos en distintos arrays para trabajarlos.
+
+Al analizar el ejercicio no me quedo claro y al momento de escribir esto no termino de entender el punto de calcular la cantidad de visitas
+unicas por cada producto simplemente asumi que se queria obtener los datos de cada producto sin que el producto estuviera duplicado en el 
+nuevo documento csv.
+
+Para el calculo de los click se contaron los click que tuviera cada producto.
+
+En el calculo ctr en vista que no se entrego una formula se asumio la formula publicada por google la cual es CTR = click / impresiones, cabe decir que 
+para obtener este calculo se establecio la condicion si impresiones fuera 0 se establecera con valor 1 para que de esta forma la division no se provoque 
+una division por cero.
+
+Una vez obtenidos todos los datos estos son concatenados por linea siguiendo el ejemplo entregado. Posteriormente estos datos son agregados a un array
+y este array es limpiado de los datos duplicados por producto.
+
+Por ultimo con el array limpio se agregan los datos al csv que el programa generara.
+
+
+Cabe decir que el programa leera el csv siempre y cuando se agregue por linea de comandos siguiendo el siguiente ejemplo:
+
+node script.js nombreArchivo.csv
