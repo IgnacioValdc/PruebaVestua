@@ -16,4 +16,15 @@
 
 # Razonamiento
 
-_Escribir aquí los supuestos asumidos, reflexiones y explicaciones de la solución_
+En este ejercicio me imagine una calculadora cientifica en la cual al poner mal los parentesis lanza error.
+Para comenzar el ejercicio estableci los condiciones primarias las cuales son:
+
+Si el string parte con un parentesis de cierre siempre sera falso
+Se establecio un array de comparacion donde se guardan los parentesis de apertura, si este array no esta vacio siempre sera falso
+Si el array de comparacion esta vacio y ya no quedan elementos en el string original sera verdadero
+
+Al establecer las condiciones anteriores y codificarlas faltaban algunos casos en los cuales era pertinente parar la ejecucion
+y establecer el balance de parentesis como falso un ejemplo de esto es el string '(])' no existe necesidad de analizar hasta el 
+ultimo dato ya que el parentesis de cierre ] no tiene uno de apertura por consiguiente el programa llegara hasta el elemento e
+indicara que es false.
+
